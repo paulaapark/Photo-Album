@@ -1,13 +1,111 @@
 body {
-    background-color: lightblue;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+
+.nav-theme{
+    /* background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0)) ; */
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.nav-intheme:hover{
+    background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0));
+    border-radius: 50px;
+}
+
+.brand-theme{
+    font-family: 'Euphoria Script', cursive;
+    font-size: 25px;
 }
 
 h1 {
-    color: white;
+    
     text-align: center;
+    font-family: 'Euphoria Script', cursive;
 }
 
 p {
-    font-family: verdana;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+    width: 75%;
+}
+
+.jt{
+    /* background-image: url(bg.webp); */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.103), rgba(255, 255, 255, 0));
+    border-radius: 40px;
+    padding: 5px;
+}
+
+
+.btn-theme{
+    background-color: rgba(255, 255, 255, 0.116);
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-theme:hover{
+    color: rgb(54, 52, 52);
+    border: 1px solid white;
+
+}
+
+.btn-theme2{
+    color: rgb(54, 52, 52);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.btn-theme2:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 200px) {
+    form{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 400px) {
+    form{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    form{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    form{
+        width: 40%;
+    }
+    
 }
