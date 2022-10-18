@@ -5,50 +5,69 @@ $(document).ready(function () {
     let username = $('#username').val();
     let image_title = $('#image-title').val();
     let comment = $('#comment').val();
-
-
-
-
-
     
-    $('#submit_btn').click(function(){ 
-        
-    
-        if (username === '') {
-            $('#validate-username').html('*Required').css('color', 'red'); 
-        }else if(username.length < 6 && username.length >= 0){
-            $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+
+    $('#username').on('input', function(){
+        let username = $('#username').val();
+            if(username.length < 6 && username.length >= 1){
+                $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
             }else if (username.length >= 6){
                 $('#validate-username').html('Looks good!').css('color', 'green');
             }
-    
-        if (image_title === '') {
-            $('#validate-image-title').html('*Required').css('color', 'red');   
-        }
-    
-        if (comment === '') {
-            $('#validate-comment').html('*Required').css('color', 'red');
-        }
     });
 
-    $('#username').focusin(function(){
-        $('#username').focusin(function(){
-            if(username.length < 6 && username.length >= 0){
+    $('#username').focusout(function(){
+        let username = $('#username').val();
+            if(username.length < 6 && username.length >= 1){
                 $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
-                }else if (username.length >= 6){
-                    $('#validate-username').html('Looks good!').css('color', 'green');
-                }
-        });
+            }else if (username.length >= 6){
+                $('#validate-username').html('Looks good!').css('color', 'green');
+            }
+    });
 
-        $('#username').focusout(function(){
-            if(username.length < 6 && username.length >= 0){
-                $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
-                }else if (username.length >= 6){
-                    $('#validate-username').html('Looks good!').css('color', 'green');
-                }
-        });
-    })
 
+    // $('#username').on('input', function(){
+    //     $(this).each(function(){
+    //         if(username.length < minlength && username.length >= 1){
+    //             $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+    //         }else if (username.length >= minlength){
+    //             $('#validate-username').html('Looks good!').css('color', 'green');
+    //         }
+    //     });
+    // });
+
+    // $('input[name=username]').on('input', function(){
+    //     ('input[name=username]').each(function(){
+    //         if(username.length < minlength && username.length >= 1){
+    //             $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+    //         }else if (username.length >= minlength){
+    //             $('#validate-username').html('Looks good!').css('color', 'green');
+    //         }
+    //     });
+    // });
+
+
+    // $('#username').focusin(function(){
+    //     if(username.length < 6 && username.length >= 1){
+    //         $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+    //     }else if (username.length >= 6){
+    //         $('#validate-username').html('Looks good!').css('color', 'green');
+    //     }
+    // });
+    
+    
+    // $('#username').focusout(function(){
+    //     if (username === '') {
+    //         $('#validate-username').html('*Required').css('color', 'red'); 
+    //     }else if(username.length < 6  && username.length >= 1){
+    //         $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+    //     }else if (username.length >= 6){
+    //         $('#validate-username').html('Looks good!').css('color', 'green');
+    //     }
+    // });
+    
+
+    
     $('#image-title').focusout(function(){
         if (image_title === '') {
             $('#validate-image-title').html('*Required').css('color', 'red');   
@@ -59,7 +78,36 @@ $(document).ready(function () {
         if (comment === '') {
             $('#validate-comment').html('*Required').css('color', 'red');   
         }
+    }); 
+    
+
+
+
+    $('#submit_btn').click(function(){ 
+
+        let username = $('#username').val();
+        let image_title = $('#image-title').val();
+        let comment = $('#comment').val();
+
+        if (username === '') {
+            $('#validate-username').html('*Required').css('color', 'red'); 
+        }else if(username.length < 6 && username.length >= 1){
+            $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+        }else if (username.length >= 6){
+            $('#validate-username').html('Looks good!').css('color', 'green');
+        }
+    
+        if (image_title === '') {
+            $('#validate-image-title').html('*Required').css('color', 'red');   
+        }
+    
+        if (comment === '') {
+            $('#validate-comment').html('*Required').css('color', 'red');
+        }
     });
+
+    
+    
 });
 
 
