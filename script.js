@@ -6,14 +6,19 @@ $(document).ready(function () {
     let image_title = $('#image-title').val();
     let comment = $('#comment').val();
 
+
+
+
+
+    
     $('#submit_btn').click(function(){ 
         
     
         if (username === '') {
             $('#validate-username').html('*Required').css('color', 'red'); 
-        }else if(username.length < 6 && username.length != 0){
+        }else if(username.length < 6 && username.length >= 0){
             $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
-            }else if (username.length > 6){
+            }else if (username.length >= 6){
                 $('#validate-username').html('Looks good!').css('color', 'green');
             }
     
@@ -26,18 +31,35 @@ $(document).ready(function () {
         }
     });
 
+    $('#username').focusin(function(){
+        $('#username').focusin(function(){
+            if(username.length < 6 && username.length >= 0){
+                $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+                }else if (username.length >= 6){
+                    $('#validate-username').html('Looks good!').css('color', 'green');
+                }
+        });
 
-    $('#username').focus(function(){
-        if (username === '') {
-            $('#validate-username').html('*Required').css('color', 'red'); 
-        }else if(username.length < 6 && username.length != 0){
-            $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
-            }else if (username.length > 6){
-                $('#validate-username').html('Looks good!').css('color', 'green');
-            }
+        $('#username').focusout(function(){
+            if(username.length < 6 && username.length >= 0){
+                $('#validate-username').html('*Username must be at least 6 characters.').css('color', 'red');
+                }else if (username.length >= 6){
+                    $('#validate-username').html('Looks good!').css('color', 'green');
+                }
+        });
+    })
+
+    $('#image-title').focusout(function(){
+        if (image_title === '') {
+            $('#validate-image-title').html('*Required').css('color', 'red');   
+        }
     });
 
-
+    $('#comment').focusout(function(){
+        if (comment === '') {
+            $('#validate-comment').html('*Required').css('color', 'red');   
+        }
+    });
 });
 
 
