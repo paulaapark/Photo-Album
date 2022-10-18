@@ -15,6 +15,8 @@
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- JS -->
+  <script src="script.js"></script>
   <!-- icofont -->
   <link rel="stylesheet" href="icofont/icofont.min.css">
 
@@ -40,70 +42,111 @@
 
   <div class="d-flex justify-content-center">
     <nav class="navbar navbar-expand navbar-dark">
-        <div class="container-fluid nav-theme">
-            <a class="navbar-brand brand-theme" href="startup_website.html">PaulaPics</a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="container-fluid nav-theme">
+        <a class="navbar-brand brand-theme" href="startup_website.html">PaulaPics</a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link nav-intheme" href="startup_website.html"><i
-                                class="icofont-home"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active nav-intheme" aria-current="page" href="catalog.html"><i
-                                class="icofont-camera-alt"></i>Catalogue</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-intheme" href="feedback.html"><i
-                                class="icofont-support-faq"></i>Feedback</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-intheme" href="startup_website.html"><i class="icofont-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-intheme" aria-current="page" href="catalog.html"><i
+                  class="icofont-camera-alt"></i>Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-intheme" href="feedback.html"><i class="icofont-support-faq"></i>Feedback</a>
+            </li>
 
-                </ul>
-            </div>
+          </ul>
         </div>
+      </div>
     </nav>
-</div>
+  </div>
   <div class="d-flex justify-content-center">
     <hr>
   </div>
   <br>
   <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img9.jpg" alt="">
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col-4 mb-4 grid-border " id="img1">
+        <img class="img-thumbnail" src="img9.jpg" alt="">
+        <span class="title-span text-center" id="img1-span">- Flower Field -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a>
+        </span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img1.jpg" alt="">
+      <div class="col-4 mb-4 grid-border" id="img2">
+        <img class="img-thumbnail" src="img1.jpg" alt=""> <br>
+        <span class="title-span text-center" id="img2-span">- Sparkling Ocean -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img3.jpg" alt="">
-        
+      <div class="col-4 mb-4 grid-border" id="img3">
+        <img class="img-thumbnail" src="img3.jpg" alt="">
+        <span class="title-span text-center" id="img3-span">- my gf turned into the moon -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
 
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img4.jpg" alt="">
+      <div class="col-4 mb-4 grid-border" id="img4">
+        <img class="img-thumbnail" src="img4.jpg" alt="">
+        <span class="title-span text-center" id="img4-span">- Pacific Coast -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img8.jpg" alt="">
+      <div class="col-4 mb-4 grid-border" id="img5">
+        <img class="img-thumbnail" src="img8.jpg" alt="">
+        <span class="title-span text-center" id="img5-span">- Stairs to Heaven -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img5.webp" alt="">
-        
+      <div class="col-4 mb-4 grid-border" id="img6">
+        <img class="img-thumbnail" src="img5.webp" alt="">
+        <span class="title-span text-center" id="img6-span">- Lost but Unafraid -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
 
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img7.jpeg" alt="">
+      <div class="col-4 mb-4 grid-border" id="img7">
+        <img class="img-thumbnail" src="img7.jpeg" alt="">
+        <span class="title-span text-center" id="img7-span">- Low Tide -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img2.jpg" alt="">
+      <div class="col-4 mb-4 grid-border" id="img8">
+        <img class="img-thumbnail" src="img2.jpg" alt="">
+        <span class="title-span text-center" id="img8-span">- Golden Hour -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
-      <div class="col-4 mb-4">
-        <img class="w-100" src="img6.jpg" alt="">
-        
+      <div class="col-4 mb-4 grid-border" id="img9">
+        <img class="img-thumbnail" src="img6.jpg" alt="">
+        <span class="title-span text-center" id="img9-span">- Twilight -<br>
+          <br>
+          <button class="btn btn-theme2" type="button"><i class="icofont-heart"></i></button><br>
+          <br>
+          <a href="feedback.html"><button class="btn btn-theme2" type="button"><i class="icofont-support-faq"></i></button></a></span>
       </div>
 
     </div>

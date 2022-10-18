@@ -109,3 +109,54 @@ form{
     }
     
 }
+
+
+.grid-border:hover img{
+    opacity: 0.4;
+    transition: all 0.27s;
+}
+
+
+.title-span{
+    opacity: 0;
+    position: relative;
+    transition: all 0.27s;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-family:'Montserrat', sans-serif;
+}
+
+.grid-border:hover .title-span{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* wanted to do an overlay but couldnt get it to work */
+
+/* .grid-border{
+    position: relative;
+}
+
+
+.grid-border:hover{
+    content: 'Here is some text..';
+    color: #fff;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.grid-border:hover:after {
+    opacity:1;
+} */
+
+

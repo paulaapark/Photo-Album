@@ -15,6 +15,8 @@
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+   <!-- JS -->
+   <script src="script.js"></script>
   <!-- icofont -->
   <link rel="stylesheet" href="icofont/icofont.min.css">
 
@@ -70,21 +72,24 @@
   <div class="d-flex justify-content-center mt-3">
     <form>
       <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" aria-describedby="Must be a minimum of 6 characters">
+        <label for="username" class="form-label">Username</label>    
+        <input type="text" class="form-control" id="username" aria-describedby="Must be at least 6 characters" required>
+        <span id="validate-username"></span>
       </div>
       <div class="mb-3">
         <label for="image-title" class="form-label">Image Title</label>
         <input type="text" class="form-control" id="image-title" aria-describedby="Must not be empty" required>
+        <span id="validate-image-title"></span>
       </div>
       <div class="mb-3">
         <label for="comment" class="form-label">Comment</label>
-        <input type="text" class="form-control" aria-describedby="Must not be empty" id="comment" required> 
+        <input type="text" class="form-control" aria-describedby="Must not be empty" id="comment" required>
+        <span id="validate-comment"></span> 
       </div>
       <div class="d-flex justify-content-center">
         <hr>
       </div>
-      <button type="submit" class="btn btn-theme2">Submit</button>
+      <button type="button" class="btn btn-theme2" id="submit_btn">Submit</button>
     </form>
   </div>
 </body>
